@@ -1,1 +1,38 @@
 
+from tkinter import *
+root = Tk()
+root.geometry("800x600")
+
+left = Frame(root, borderwidth=2, relief="solid")
+right = Frame(root, borderwidth=2, relief="solid")
+#container = Frame(left, borderwidth=2, relief="solid")
+box1 = Frame(right, borderwidth=2, relief="solid", width=20,height=20)
+box2 = Frame(right, borderwidth=2, relief="solid")
+box3 = Frame(left, borderwidth=2, relief="solid")
+box4 = Frame(left, borderwidth=2, relief="solid")
+
+#label1 = Label(container, text="I could be a canvas, but I'm a label right now")
+label2 = Label(box1, text="3D Matplot")
+label3 = Label(box2, text="STATUS\nGPS:\nIMU:\nALT:\nAirspeed\nLTE:")
+label4 = Label(box3, text="Video")
+#label5 = Label(box4, text="Telemetry")
+label5 = Label(box4, text="TELEMETRY\nTime:\nLTE:\nGPS:\nIMU:\nAlt/Pressure:\nAirspeed:\nCamera:\nSD:\nTeensy:\nPi:", anchor='e')
+#label5 = "TELEMETRY\nTime:\nLTE:\nGPS:\nIMU:\nAlt/Pressure:\nAirspeed:\nCamera:\nSD:\nTeensy:\nPi:"
+
+#left.pack(side="left", expand=True, fill="both")
+
+left.pack(side="left", expand=True, fill="both")
+right.pack(side="right", expand=True, fill="both")
+#container.pack(expand=True, fill="both", padx=10, pady=10)
+box1.pack(expand=True, fill="both", padx=5, pady=5)
+box2.pack(expand=True, fill="both", padx=5, pady=5)
+box3.pack(expand=True, fill="both", padx=5, pady=5)
+box4.pack(expand=True, fill="both", padx=5, pady=5)
+
+#label1.pack()
+label2.pack()
+label3.pack()
+label4.pack()
+label5.pack()
+
+root.mainloop()
